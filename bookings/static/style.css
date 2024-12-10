@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 15px;
+    background: #333333;
+    width: 100%;
+    color: white;
+}
+nav .logo h3{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    color: #FFD700;
+
+}
+nav ul{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background: #FAF3E0;
+    color: #4E342E;
+    max-width: 100%;
+}
+/*hero section styling*/
+.hero-section{
+    height: 100vh;
+    max-width: 100%;
+}
+.hero-section .event{
+    height: 70%;
+    max-width: 100%;
+
+    
+}
+
+/* Slider container */
+.event {
+    position: relative;
+    max-width: 100%; 
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+  
+  
+
+  
+  /* Individual images */
+ .event img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    flex-shrink: 0;
+  }
+  
+ 
+
+.hero-section .CTA{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    height: 30%;
+    
+}
+.hero-section .CTA button{
+    border-style: none;
+    border-radius: 5px;
+    padding: 12px;
+    background: #FFD700;
+    color: #333333;
+}
+.hero-section .CTA button a{
+    text-decoration: none;
+    color: #333333;
+}
+
