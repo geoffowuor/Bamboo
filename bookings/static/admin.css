@@ -1,14 +1,27 @@
 *{
     margin: 0;
+
+
+    
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     justify-items: center;
-    padding: 15px;
-    background: #333333;
     color: white;
+    top: 0;
+    background: linear-gradient(90deg, #121212, #1e1e1e); 
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+
+
+
+
 }
 nav .logo h3{
     font-family: "Edu AU VIC WA NT Pre", cursive;
@@ -26,10 +39,23 @@ nav ul li{
     font-family: "Encode Sans Semi Condensed", sans-serif;
 }
 nav ul li a{
+    color: #ffffff; 
     text-decoration: none;
-    color: white;
+    font-size: 16px;
+    margin: 0 15px;
+    text-transform: uppercase; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-body{
-    background: #FAF3E0;
-    color: #4E342E;
+nav a:hover {
+    color: #00ffff; /* Neon blue */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Glow effect */
+}
+
+h3,
+h2{
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    margin-top: 10px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
 }

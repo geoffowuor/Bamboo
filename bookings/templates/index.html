@@ -8,19 +8,27 @@
 
     
         {% load static %}
-        <div class="event">
-  
-            <img src="{% static 'images/dng.png' %}" alt="#">
-            
+        <div class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="events">
+                <div class="event">
+                    <img src="{% static 'images/1735031299427.jpg' %}" alt="DJ Night">
+                </div>
+                <div class="event">
+                    <img src="{% static 'images/1735031307538.jpg' %}" alt="New Year's Eve Party">
+                </div>
+                <div class="event">
+                    <img src="{% static 'images/1735031312374.jpg' %}" alt="Cocktail Night">
+                </div>
+            </div>
         </div>
-
 
 
 
 <div class="CTA">
 
-    <button><a href="#">Reserve a Table</a></button>
-    <button><a href="#">Book a Room</a></button>
+    <button><a href="{% url "reserve" %}">Reserve a Table</a></button>
+    <button><a href="{% url "book" %}">Book a Room</a></button>
     
 
 
@@ -84,11 +92,42 @@
         </div>
 
 
+        
+
+
 
 
     </div>
 
+    <h3>Events</h3>
+
     
+    <div class="performance">
+
+        <div class="text">
+          
+            <p>{% lorem 2 %}<p>
+    
+        </div>
+
+
+
+
+        <div class="img">
+            <img src="{% static 'images/young-adult-having-fun-white-party.jpg' %}">
+    
+        </div>
+
+
+
+        
+
+
+
+
+    </div>
+
+
 
 
 </div>

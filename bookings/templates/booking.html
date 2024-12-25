@@ -1,0 +1,45 @@
+{% extends "_base.html" %}
+{% block title %}<title>Book a Room</title>{% endblock title %}
+{% block content %}
+{% load static %}
+<div class="container" id="room">
+  <div class="img">
+    <h3>A room? We got You.</h3>
+    <img src="{% static 'images/christopher-jolly-GqbU78bdJFM-unsplash.jpg' %}">
+
+</div>
+
+<div class="form">
+
+
+<form method="POST">
+  {% csrf_token %}
+  
+
+  <label for="booking"></label>
+  <input type="text" id="booking" name="name" placeholder="Enter your name" required><br>
+
+  <label for="booking"></label>
+  <input type="text" id="booking" name="contact" placeholder="Enter your phone number" required><br>
+
+  <label for="booking"></label>
+  <input type="email" id="booking" name="email" placeholder="Enter your email address" required><br>
+
+  <label for="booking"><strong>Arrival:</strong></label>
+  <input type="date" id="booking" name="arrival" placeholder="Enter your Contact" required><br>
+
+  <label for="booking"><strong>Depature:</strong></label>
+  <input type="date" id="booking" name="depature" placeholder="Enter your Contact" required><br>
+
+
+
+
+  <button type="submit">Request Booking</button>
+</form>
+</div>
+
+</div>
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
