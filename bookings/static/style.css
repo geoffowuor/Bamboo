@@ -345,7 +345,14 @@ h3{
 
 }
 
-
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 40px;
+    margin-top: 25%;
+}
 
 button {
     background: #00ffff;

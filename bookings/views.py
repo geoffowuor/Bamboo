@@ -15,7 +15,7 @@ def booking(request):
         if form.is_valid():
             booking = form.save(commit=False)
             booking.save()
-            return redirect('application_success')  
+            return redirect('booking_success')  
     else:
         form = bookingForm()
 
@@ -27,14 +27,18 @@ def reserve(request):
         if form.is_valid():
             reserve = form.save(commit=False)
             reserve.save()
-            return redirect('application_success')  
+            return redirect('reservation_success')  
     else:
         form = reserveForm()
 
     return render(request, 'reserve.html', {'form': form})
 
 
+def booking_success(request):
+    return render(request, 'booking_success.html')
 
+def reservation_success(request):
+    return render(request, 'reservation_success.html')
 
 
 

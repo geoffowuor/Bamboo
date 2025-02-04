@@ -8,6 +8,8 @@ urlpatterns = [
     path('dashboard/', views.admin),
     path('book/', views.booking, name="book"),
     path('reserve/', views.reserve, name="reserve"),
+    path('reserved!/', views.reservation_success, name="reservation_success"),
+    path('booked!/', views.booking_success, name="booking_success"),
     
     
 ]
